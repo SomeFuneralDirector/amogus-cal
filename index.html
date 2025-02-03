@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="calculator">
+        <input type="text" name="" id="output" placeholder="0" readonly>
+        <div id="top">
+            <button onclick="ano()" class="ope">AC</button>
+            <button onclick="pindot('%')" class="ope">%</button>
+            <button onclick="clearOutput()" class="ope">Del</button>
+            <button onclick="pindot('/')" class="ope">/</button>
+        </div>
+
+        <div>
+            <button onclick="pindot('7')">7</button>
+            <button onclick="pindot('8')">8</button>
+            <button onclick="pindot('9')">9</button>
+            <button onclick="pindot('*')"class="ope">x</button>
+        </div>
+
+        <div>
+            <button onclick="pindot('4')">4</button>
+            <button onclick="pindot('5')">5</button>
+            <button onclick="pindot('6')">6</button>
+            <button onclick="pindot('-')"class="ope">-</button>
+        </div>
+
+        <div>
+            <button onclick="pindot('1')">1</button>
+            <button onclick="pindot('2')">2</button>
+            <button onclick="pindot('3')">3</button>
+            <button onclick="pindot('+')"class="ope">+</button>
+        </div>
+
+        <div>
+            <button onclick="pindot('00')">00</button>
+            <button onclick="pindot('0')">0</button>
+            <button onclick="pindot('.')">.</button>
+            <button onclick="calc()" id="eq">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
